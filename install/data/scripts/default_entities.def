@@ -1012,6 +1012,18 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
+/*QUAKED boss2_spawn (1 1 0) (-48 -48 -72) (48 48 135) AUTORESPAWN FREEHUNT
+Boss2 monster spawn
+-------- KEYS --------
+cnt: monster count
+targetname: target name
+target: monster target
+respawntime: monster respawntime
+-------- SPAWNFLAGS --------
+AUTORESPAWN: Auto respawn
+FREEHUNT: Free hunt
+*/
+
 /*QUAKED ewheel_spawn (1 1 0) (-32 -32 0) (32 32 48) AUTORESPAWN FREEHUNT
 Ewheel monster spawn
 -------- KEYS --------
@@ -1048,6 +1060,18 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
+/*QUAKED marine_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+Marine monster spawn
+-------- KEYS --------
+cnt: monster count
+targetname: target name
+target: monster target
+respawntime: monster respawntime
+-------- SPAWNFLAGS --------
+AUTORESPAWN: Auto respawn
+FREEHUNT: Free hunt
+*/
+
 /*QUAKED heavysoldier_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Heavy soldier monster spawn
 -------- KEYS --------
@@ -1059,6 +1083,19 @@ respawntime: monster respawntime
 AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
+
+/*QUAKED rlgirl_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+Rocket girl monster spawn
+-------- KEYS --------
+cnt: monster count
+targetname: target name
+target: monster target
+respawntime: monster respawntime
+-------- SPAWNFLAGS --------
+AUTORESPAWN: Auto respawn
+FREEHUNT: Free hunt
+*/
+
 
 /*QUAKED soldier_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Soldier monster spawn
