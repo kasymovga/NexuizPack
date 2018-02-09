@@ -227,6 +227,24 @@ Behaves just like solid brushes, except that it is a separate entity (a submodel
 targetname: when invoking it by a button etc., it changes the color to the initiator of the action (e.g. the one pressing a button). In Onslaught, this can be used to color control points for team who owns them. In other game types, this can be used as a fun feature.
 */
 
+/*QUAKED func_magicwall (0 .5 .8) ? - - START_HIDDEN TOGGLE
+Magic wall
+-------- KEYS --------
+targetname: for activate with triggers/buttons
+alpha_solid: -
+alpha_nonsolid: -
+-------- SPAWNFLAGS --------
+START_HIDDEN: start non-solid
+TOGGLE: toggle mode
+*/
+
+/*QUAKED func_breakable (0 .5 .8) ?
+Breakable object
+-------- KEYS --------
+respawntime: -
+dmg: -
+*/
+
 /*QUAKED info_location (1 1 0) (-8 -8 -8) (8 8 8) 
 Location for use by the %l escape in "say" messages.
 The closest "visible" info_location entity is chosen to find the right location name for a point.
