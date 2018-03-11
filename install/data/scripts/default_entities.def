@@ -582,11 +582,8 @@ EXTRUDE_NORMALS: for converting triangles to clip brushes, extrude along the mod
 EXTRUDE_TERRAIN: always extrude downwards (for terrain)
 */
 
-/*QUAKED misc_models (0 .5 .8) ? 
-A non-solid brush entity, or a way to load models from a map (e.g. self-animated zym models).
-Behaves just like non-solid brushes otherwise.
-The keys below actually apply to most brush entities as they are engine features; however, they are described here as they aren't overridden by game code in misc_models. Its q3map2 keys below will work on any brush entity!
-_receiveshadows only works if this is a brush model (that is, if "model" is not defined).
+/*QUAKED misc_gamemodel (0 .5 .8) ? 
+A way to load models from a map (e.g. self-animated zym models).
 -------- KEYS --------
 model: when used as a point entity, file name of model to load; when used as a brush entity, do not specify that
 frame: animation frame to play (for self-animated zym models)
@@ -599,17 +596,15 @@ colormap: 1024 + 16 * pantscolor + shirtcolor
 velocity: when movetype isn't 0, initial velocity vector
 angles: initial looking direction
 effects: sum of 1 = BRIGHTFIELD, 4 = BRIGHTLIGHT, 8 = DIMLIGHT, 32 = ADDITIVE, 64 = BLUE, 128 = RED, 512 = FULLBRIGHT, 1024 = FLAME, 2048 = STARDUST, 4096 = NOSHADOW, 8192 = NODEPTHTEST, 32768 = DOUBLESIDED, 8388608 = NOMODELFLAGS (ignores the following coming from a model file), 16777216 = ROCKET, 33554432 = GRENADE, 67108864 = GIB, 134217728 = ROTATE, 268435456 = TRACER, 536870912 = ZOMGIB, 1073741824 = TRACER2, -2147483648 = TRACER3
--------- Q3MAP2 KEYS --------
-_frame: frame of model to include (set equal to frame if _castshadows is set)
-modelscale: scaling factor (set equal to scale if _castshadows is set)
-_castshadows: Allows per-entity control over shadow casting. Defaults to 0 on entities, 1 on world. 0 = no shadow casting. 1 = cast shadows on world. > 1 = cast shadows on entities with _rs (or _receiveshadows) with the corresponding value, AND world. Negative values imply same, but DO NOT cast shadows on world.
-_receiveshadows: Allows per-entity control over shadow reception. Defaults to 1 on everything (world shadows). 0 = receives NO shadows. > 1 = receive shadows only from corresponding keyed entities (see above) and world. < 1 = receive shadows ONLY from corresponding keyed entities.
-_clone: copies brushes from entity with identical _clonename. Still needs a single brush that will get replaced.
-_clonename: template name so one can clone from it
-min: override automatically found minimum coordinate bounds
-max: override automatically found maximum coordinate bounds
-targetname: if targeted by a misc_model, its brushes get inserted into this
-_celshader: Sets the cel shader used for this geometry. Note: omit the "textures/" prefix.
+*/
+
+/*QUAKED misc_clientmodel (0 .5 .8) ? 
+A way to load models from a map, csqc-version
+-------- KEYS --------
+model: when used as a point entity, file name of model to load; when used as a brush entity, do not specify that
+solid: solidity: one of 0 = NOT, 1 = TRIGGER, 2 = BBOX, 3 = SLIDEBOX, 4 = BSP, 5 = CORPSE
+scale: scale factor of the model (range: 0.0625 to 15.9375)
+colormap: 1024 + 16 * pantscolor + shirtcolor
 */
 
 /*QUAKED misc_teleporter_dest (1 .5 .25) (-16 -16 -24) (16 16 45) 
