@@ -582,7 +582,7 @@ EXTRUDE_NORMALS: for converting triangles to clip brushes, extrude along the mod
 EXTRUDE_TERRAIN: always extrude downwards (for terrain)
 */
 
-/*QUAKED misc_gamemodel (0 .5 .8) ? 
+/*QUAKED misc_gamemodel (0 .5 .8) (-16 -16 -16) (16 16 16)
 A way to load models from a map (e.g. self-animated zym models).
 -------- KEYS --------
 model: when used as a point entity, file name of model to load; when used as a brush entity, do not specify that
@@ -598,7 +598,7 @@ angles: initial looking direction
 effects: sum of 1 = BRIGHTFIELD, 4 = BRIGHTLIGHT, 8 = DIMLIGHT, 32 = ADDITIVE, 64 = BLUE, 128 = RED, 512 = FULLBRIGHT, 1024 = FLAME, 2048 = STARDUST, 4096 = NOSHADOW, 8192 = NODEPTHTEST, 32768 = DOUBLESIDED, 8388608 = NOMODELFLAGS (ignores the following coming from a model file), 16777216 = ROCKET, 33554432 = GRENADE, 67108864 = GIB, 134217728 = ROTATE, 268435456 = TRACER, 536870912 = ZOMGIB, 1073741824 = TRACER2, -2147483648 = TRACER3
 */
 
-/*QUAKED misc_clientmodel (0 .5 .8) ? 
+/*QUAKED misc_clientmodel (0 .5 .8) (-16 -16 -16) (16 16 16)
 A way to load models from a map, csqc-version
 -------- KEYS --------
 model: when used as a point entity, file name of model to load; when used as a brush entity, do not specify that
