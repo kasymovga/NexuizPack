@@ -1001,7 +1001,7 @@ FLOATING: the item will float in air, instead of aligning to the floor by fallin
 model="models/weapons/g_zapper.md3"
 */
 
-/*QUAKED bat_spawn (1 1 0) (-32 -32 -32) (32 32 32) AUTORESPAWN FREEHUNT
+/*QUAKED monster_bat_spawn (1 1 0) (-32 -32 -32) (32 32 32) AUTORESPAWN FREEHUNT
 Bat monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1013,7 +1013,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED boss1_spawn (1 1 0) (-48 -48 -72) (48 48 135) AUTORESPAWN FREEHUNT
+/*QUAKED monster_boss1_spawn (1 1 0) (-48 -48 -72) (48 48 135) AUTORESPAWN FREEHUNT
 Boss1 monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1025,7 +1025,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED boss2_spawn (1 1 0) (-48 -48 -72) (48 48 135) AUTORESPAWN FREEHUNT
+/*QUAKED monster_boss2_spawn (1 1 0) (-48 -48 -72) (48 48 135) AUTORESPAWN FREEHUNT
 Boss2 monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1037,7 +1037,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED ewheel_spawn (1 1 0) (-32 -32 0) (32 32 48) AUTORESPAWN FREEHUNT
+/*QUAKED monster_ewheel_spawn (1 1 0) (-32 -32 0) (32 32 48) AUTORESPAWN FREEHUNT
 Ewheel monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1049,7 +1049,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED fireguy_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+/*QUAKED monster_fireguy_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Fire guy monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1061,7 +1061,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED flyingthing_spawn (1 1 0) (-16 -16 -48) (16 16 0) AUTORESPAWN FREEHUNT
+/*QUAKED monster_flyingthing_spawn (1 1 0) (-16 -16 -48) (16 16 0) AUTORESPAWN FREEHUNT
 Fire guy monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1073,7 +1073,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED marine_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+/*QUAKED monster_marine_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Marine monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1085,7 +1085,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED heavysoldier_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+/*QUAKED monster_heavysoldier_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Heavy soldier monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1097,7 +1097,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED rlgirl_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+/*QUAKED monster_rlgirl_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Rocket girl monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1110,7 +1110,7 @@ FREEHUNT: Free hunt
 */
 
 
-/*QUAKED soldier_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+/*QUAKED monster_soldier_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Soldier monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1122,7 +1122,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED spearguy_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
+/*QUAKED monster_spearguy_spawn (1 1 0) (-16 -16 -24) (16 16 45) AUTORESPAWN FREEHUNT
 Spear guy monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1134,7 +1134,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED spider_spawn (1 1 0) (-16 -16 0) (16 16 24) AUTORESPAWN FREEHUNT
+/*QUAKED monster_spider_spawn (1 1 0) (-16 -16 0) (16 16 24) AUTORESPAWN FREEHUNT
 Spider monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1146,7 +1146,7 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
-/*QUAKED walker_spawn (1 1 0) (-70 -70 5) (70 70 90) AUTORESPAWN FREEHUNT
+/*QUAKED monster_walker_spawn (1 1 0) (-70 -70 5) (70 70 90) AUTORESPAWN FREEHUNT
 Walker monster spawn
 -------- KEYS --------
 cnt: monster count
@@ -1182,5 +1182,11 @@ _lightmapscale: light map resolution factor
 _castshadows: Allows per-entity control over shadow casting. Defaults to 0 on entities, 1 on world. 0 = no shadow casting.1 = cast shadows on world. > 1 = cast shadows on entities with _rs (or _receiveshadows) with the corresponding value, AND world. Negative values imply same, but DO NOT cast shadows on world.
 _receiveshadows: Allows per-entity control over shadow reception. Defaults to 1 on everything (world shadows). 0 = receives NO shadows. > 1 = receive shadows only from corresponding keyed entities (see above) and world. < 1 = receive shadows ONLY from corresponding keyed entities.
 _celshader: Sets the cel shader used for this geometry. Note: omit the "textures/" prefix.
+*/
+
+/*QUAKED survive_wave (0 .5 0) (-8 -8 -8) (8 8 8) 
+Wave target for survival mode.
+-------- KEYS --------
+targetname: the entity that requires an aiming direction points to this.
 */
 
