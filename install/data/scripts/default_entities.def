@@ -1158,6 +1158,13 @@ AUTORESPAWN: Auto respawn
 FREEHUNT: Free hunt
 */
 
+/*QUAKED monster_walk_path (0 .5 0) (-8 -8 -8) (8 8 8)
+Aiming target for monsters.
+-------- KEYS --------
+targetname: the monster that requires an aiming direction points to this.
+target: next target.
+*/
+
 /*QUAKED worldspawn (0 0 0) ? 
 The world.
 If you see this, the currently selected brush is not of an entity.
